@@ -7,7 +7,7 @@ package clientejb;
 import java.util.Properties;
 import javax.naming.Context;
 import javax.naming.InitialContext;
-import zanz.AsyncRemote;
+import zanzibar.AsyncRemote;
 
 /**
  * Lägg jarar i den ordningen:
@@ -19,7 +19,7 @@ import zanz.AsyncRemote;
 public class J2SEClientAsync {
 
     public static void main(String[] args) {
-        System.out.println("Hej världen .....  ");
+        System.out.println("Hej världen, hur mår du idag! ");
         try {
             Properties jndiProps = new Properties();
             jndiProps.put("java.naming.factory.initial", "com.sun.enterprise.naming.impl.SerialInitContextFactory");
