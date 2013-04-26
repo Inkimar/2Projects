@@ -4,6 +4,7 @@
  */
 package zanz;
 
+import zanzibar.AsyncRemote;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
@@ -12,12 +13,12 @@ import javax.ejb.Stateless;
  * @author ingimar
  */
 @Stateless
-@EJB(name=" ", beanInterface=AsyncRemote .class)  
+// @EJB(name=" ", beanInterface=AsyncRemote .class)  
 public class AsyncBean implements AsyncRemote {
 
     @Override
     public String businessMethod() {
-        return "Hello, Hello";
+        return "EJB-bean says Hello !! and HI !! ";
     }
 
 }
