@@ -30,7 +30,7 @@ public class J2SEClientAsync {
             Context ctx = new InitialContext(jndiProps);
             @SuppressWarnings("unused")
             AsyncRemote bean = (AsyncRemote) ctx.lookup("java:global/Async/AsyncBean");
-            System.out.println("out from bean : "+bean.businessMethod());
+            System.out.println("Response coming from bean :"+bean.businessMethod());
         } catch (Exception e) {
             e.printStackTrace();
         }
