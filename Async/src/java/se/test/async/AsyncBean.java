@@ -2,9 +2,8 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package zanz;
+package se.test.async;
 
-import zanzibar.AsyncRemote;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
@@ -18,7 +17,7 @@ public class AsyncBean implements AsyncRemote {
 
     @Override
     public String businessMethod() {
-        return "EJB-bean says Hello !! and HI !! ";
+        return "EJB-bean says Hello.";
     }
 
 }
