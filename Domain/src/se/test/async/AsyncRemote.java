@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package zanzibar;
+package se.test.async;
 
 import javax.ejb.Remote;
 
