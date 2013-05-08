@@ -4,7 +4,7 @@
  */
 package se.test.async;
 
-import javax.ejb.EJB;
+import java.util.Date;
 import javax.ejb.Stateless;
 
 /**
@@ -12,12 +12,12 @@ import javax.ejb.Stateless;
  * @author ingimar
  */
 @Stateless
-// @EJB(name=" ", beanInterface=AsyncRemote .class)  
 public class AsyncBean implements AsyncRemote {
 
     @Override
     public String businessMethod() {
-        return "EJB-bean says Hello.";
+        Date date = new Date();
+        return "EJB-bean says Hello. Servertime is "+date;
     }
 
 }
